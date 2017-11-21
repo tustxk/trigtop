@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<level-list xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:drawable="@drawable/wifi_signl_no"
+        android:maxLevel="1"/>
+    <item
+        android:drawable="@drawable/wifi_signl1"
+        android:maxLevel="2"/>
+    <item
+        android:drawable="@drawable/wifi_signl2"
+        android:maxLevel="3"/>
+    <item
+        android:drawable="@drawable/wifi_signl3"
+        android:maxLevel="4"/>
+
+</level-list>

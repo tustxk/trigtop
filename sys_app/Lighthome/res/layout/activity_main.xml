@@ -1,0 +1,93 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/main_id_root"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    tools:context=".OverlayActivity" >
+
+    <ImageView
+        android:id="@+id/main_id_category_img"
+        android:layout_width="@dimen/main_category_img_width"
+        android:layout_height="@dimen/main_category_img_height"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"/>
+    
+    <TextView
+        android:id="@+id/main_id_category_tips"
+        android:layout_width="@dimen/main_category_tips_width"
+        android:layout_height="@dimen/main_category_img_height"
+		android:layout_toRightOf="@id/main_id_category_img"
+		android:textColor="@color/white"
+		android:visibility="gone"
+        android:textSize="40sp" />
+
+    <ImageView
+        android:id="@+id/main_id_wifi"
+        android:layout_width="@dimen/main_wifi_width"
+        android:layout_height="@dimen/main_wifi_height"
+        android:layout_marginTop="@dimen/main_wifi_margin_top"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/wifi_signl_no"
+        android:scaleType="fitXY"/>
+    <!--<ImageView
+        android:id="@+id/main_id_search"
+        android:layout_width="@dimen/main_category_img_width"
+        android:layout_height="@dimen/main_category_img_height"
+        android:layout_toLeftOf="@id/main_id_wifi"
+        android:layout_alignParentTop="true"
+        android:scaleType="fitXY"
+        android:focusable="true"
+        android:clickable="true"
+        android:onClick="onIconClick"
+        android:tag="@string/package_search"
+        android:nextFocusLeft="@null"
+        android:nextFocusRight="@null"
+		android:background="@drawable/search_bg"/>
+    -->
+     <ImageView
+        android:id="@+id/main_id_left"
+        android:layout_width="@dimen/main_switch_width"
+        android:layout_height="@dimen/main_switch_height"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/switch_left_bg"
+        android:scaleType="fitXY"
+        android:focusable="true"
+        android:clickable="true"
+        android:onClick="onIconClick" />
+
+    <FrameLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/main_fragment_container_height"
+        android:layout_below="@id/main_id_category_img"
+        android:layout_marginRight="@dimen/main_fragments_container_margin_left_right"
+        android:layout_marginLeft="@dimen/main_fragments_container_margin_left_right"
+        tools:ignore="MergeRootFrame" >
+    </FrameLayout>
+    
+     <ImageView
+        android:id="@+id/main_id_right"
+        android:layout_width="@dimen/main_switch_width"
+        android:layout_height="@dimen/main_switch_height"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/switch_right_bg"
+        android:scaleType="fitXY"
+        android:focusable="true"
+        android:clickable="true"
+        android:onClick="onIconClick" />
+
+    <ImageView
+        android:id="@+id/main_id_mark"
+        android:layout_width="@dimen/main_mark_container_width"
+        android:layout_height="@dimen/main_mark_container_height"
+        android:layout_below="@id/container"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/main_mark_margin_top"/>
+
+</RelativeLayout>

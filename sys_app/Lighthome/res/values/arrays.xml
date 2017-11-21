@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="week">
+        <item>Sunday</item>
+        <item>Monday</item>
+        <item>Tuesday</item>
+        <item>Wednesday</item>
+        <item>Thursday</item>
+        <item>Friday</item>
+        <item>Saturday</item>
+    </string-array>
+    
+    <string-array name="long_click_dialog_items">
+        <item>Open</item>
+        <item>Uninstall</item>
+        <item>Details</item>
+    </string-array>
+    <string-array name="long_click_dialog_items_no_uninstall">
+        <item>Open</item>
+        <item>Details</item>
+    </string-array>
+
+</resources>

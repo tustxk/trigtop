@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <GridView
+        android:id="@+id/bg_id_gridview"
+        android:layout_width="@dimen/bg_selector_width"
+        android:layout_height="@dimen/bg_selector_height"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:horizontalSpacing="@dimen/bg_grid_item_horizental_space"
+        android:numColumns="auto_fit"
+        android:padding="@dimen/bg_grid_padding"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="@dimen/bg_grid_item_vertical_space" />
+
+</FrameLayout>

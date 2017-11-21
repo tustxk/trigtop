@@ -1,0 +1,115 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">32dp</dimen>
+    <dimen name="activity_vertical_margin">32dp</dimen>
+    <dimen name="main_category_img_width">100dp</dimen>
+    <dimen name="main_category_img_height">100dp</dimen>
+    <dimen name="main_category_tips_width">360dp</dimen>
+    <dimen name="main_wifi_width">64dp</dimen>
+    <dimen name="main_wifi_height">64dp</dimen>
+    <dimen name="main_wifi_margin_top">16dp</dimen>
+    <dimen name="main_switch_width">32dp</dimen>
+    <dimen name="main_switch_height">640dp</dimen>
+    <dimen name="main_fragments_container_margin_left_right">24dp</dimen>
+    <dimen name="main_fragment_container_height">865dp</dimen>
+    <dimen name="main_mark_margin_top">16dp</dimen>
+    <dimen name="main_mark_container_width">1280dp</dimen>
+    <dimen name="main_mark_container_height">20dp</dimen>
+    
+        <!-- for new center -->
+    <dimen name="center_icon_margin">16dp</dimen>
+    <dimen name="center_icon_edge_margin">16dp</dimen>
+    <dimen name="center_common_width">268dp</dimen>
+    <dimen name="center_common_height">238dp</dimen>
+    <dimen name="center_common_small_height">182dp</dimen>
+    <dimen name="center_common_long_width">552dp</dimen>
+    <dimen name="center_common_long_height">320dp</dimen>
+    <dimen name="center_common_bigicon_paddingtop">50dp</dimen>
+    <dimen name="center_clock_width_height">160dp</dimen>
+    <dimen name="center_time_weather_middle_line_margin">40dp</dimen>
+    
+    <dimen name="center_date_time_weather_height">230dp</dimen>
+    <dimen name="center_date_time_margin_top">20dp</dimen>
+    <dimen name="center_date_time_padding">20dp</dimen>
+    
+    <dimen name="center_time_height">300dp</dimen>
+    <dimen name="center_week_width">320dp</dimen>
+    <dimen name="center_week_date_height">60dp</dimen>
+    <dimen name="center_date_width">350dp</dimen>
+    <dimen name="center_weather_icon_width_height">150dp</dimen>
+    <dimen name="center_weather_icon_padding">30dp</dimen>
+    <dimen name="center_weather_icon_margin_top">5dp</dimen>
+    <dimen name="center_city_height">120dp</dimen>
+    <dimen name="center_weather_info_height">60dp</dimen>
+    
+    <dimen name="center_weather_waiting_tips_size">20sp</dimen>
+    <dimen name="center_time_text_size">130sp</dimen>
+    <dimen name="center_city_text_size">45sp</dimen>
+    <dimen name="center_week_date_text_size">30sp</dimen>
+    <dimen name="center_weather_info_size">25sp</dimen>
+    <dimen name="center_weather_others_size">20sp</dimen>
+    <dimen name="center_memory_used_text_size">23sp</dimen>
+    
+    <dimen name="center_memory_container_margin_top">600dp</dimen>
+    <dimen name="center_memory_circle_width_height">200dp</dimen>
+        
+    
+    <dimen name="center_favorate_tips_margin_top">32dp</dimen>
+    <dimen name="center_favorate_tips_width">480dp</dimen>
+    <dimen name="center_favorate_tips_height">96dp</dimen>
+    <dimen name="center_favorates_tips_font_size">30sp</dimen>
+    <dimen name="center_favorate_container_width">620dp</dimen>
+    <dimen name="center_favorate_container_out_margin_top">48dp</dimen>
+    <dimen name="center_favorate_container_in_margin_top">32dp</dimen>
+    <dimen name="center_favorate_container_padding_bottom">16dp</dimen>
+    
+    <dimen name="center_mark_container_margin_top">16dp</dimen>
+    <dimen name="center_xbmc_shop_margin_left">32dp</dimen>
+    <dimen name="center_mark_container_height">32dp</dimen>
+    <dimen name="center_logo_width">80dp</dimen>
+    <dimen name="center_logo_height">96dp</dimen>
+    <dimen name="center_category_width">288dp</dimen>
+    <dimen name="center_category_height">32dp</dimen>
+    
+    
+    
+    <!-- for apps activity -->
+    <dimen name="apps_grid_padding">40dp</dimen>
+    <dimen name="apps_grid_item_width">220dp</dimen>
+    <dimen name="all_apps_grid_item_vertical_space">45dp</dimen>
+    <dimen name="app_item_width">220dp</dimen>
+    <dimen name="app_item_height">120dp</dimen>
+    <dimen name="app_text_size">20sp</dimen>
+    <dimen name="app_icon_width">100dp</dimen>
+    <dimen name="app_icon_height">100dp</dimen>
+    
+    <!-- for shortcut fragment -->
+    <dimen name="category_grid_item_width">300dp</dimen>
+    <dimen name="category_grid_item_vertical_space">20dp</dimen>
+    <dimen name="shortcut_item_width">260dp</dimen>
+    <dimen name="shortcut_item_height">260dp</dimen>
+    <dimen name="shortcut_icon_width">120dp</dimen>
+    <dimen name="shortcut_icon_height">120dp</dimen>
+    <dimen name="shortcut_text_size">25sp</dimen>
+    
+    <!-- for favorite item -->
+    <dimen name="center_grid_item_width">160dp</dimen>
+    <dimen name="center_favorite_grid_item_vertical_space">45dp</dimen>
+    <dimen name="favorite_item_width">140dp</dimen>
+    <dimen name="favorite_item_height">90dp</dimen>
+    <dimen name="favorite_text_size">20sp</dimen>
+    <dimen name="favorite_icon_width">80dp</dimen>
+    <dimen name="favorite_icon_height">80dp</dimen>
+    
+    <!-- for background selector -->
+    <dimen name="bg_selector_width">1200dp</dimen>
+    <dimen name="bg_selector_height">900dp</dimen>
+    <dimen name="bg_selector_item_width">600dp</dimen>
+    <dimen name="bg_selector_item_height">400dp</dimen>
+    <dimen name="bg_selector_item_margin">30dp</dimen>
+    <dimen name="bg_grid_item_horizental_space">30dp</dimen>
+    <dimen name="bg_grid_padding">30dp</dimen>
+    <dimen name="bg_grid_item_vertical_space">30dp</dimen>
+    
+</resources>

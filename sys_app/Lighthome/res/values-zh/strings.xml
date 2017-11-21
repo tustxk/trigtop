@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+      <string name="poweroff">关机</string>
+     <string name="sleep">休眠</string>
+     <string name="Delay">重启</string>
+</resources>

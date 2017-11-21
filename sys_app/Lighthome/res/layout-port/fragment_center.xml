@@ -1,0 +1,340 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center">
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center">
+
+        <LinearLayout
+                android:id="@+id/center_id_date_time_weather_container"
+                android:layout_width="@dimen/center_common_long_width"
+                android:layout_height="@dimen/center_date_time_weather_height"
+                android:layout_marginLeft="@dimen/center_icon_edge_margin"
+                android:layout_marginTop="@dimen/center_icon_edge_margin"
+                android:background="@drawable/hot_icon_bg"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center"
+                android:onClick="onIconClick"
+                android:orientation="vertical"
+                android:nextFocusRight="@id/center_id_xbmc"
+                android:padding="@dimen/center_date_time_padding">
+
+            <RelativeLayout
+                    android:id="@+id/time_date_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="3"
+                    android:gravity="center_vertical">
+
+                <AnalogClock
+                        android:id="@+id/center_id_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/center_time_text_size"/>
+
+                <TextView
+                        android:id="@+id/center_id_week"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/center_week_date_height"
+                        android:layout_toRightOf="@+id/center_id_time"
+                        android:textColor="@color/white"
+                        android:gravity="center"
+                        android:textSize="@dimen/center_week_date_text_size"/>
+
+                <TextView
+                        android:id="@+id/center_id_date"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/center_week_date_height"
+                        android:layout_below="@+id/center_id_week"
+                        android:layout_toRightOf="@+id/center_id_time"
+                        android:textColor="@color/white"
+                        android:gravity="center"
+                        android:textSize="@dimen/center_week_date_text_size"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="5"
+                    android:gravity="center">
+
+                <ProgressBar
+                        android:id="@+id/center_id_weather_waiting"
+                        style="?android:attr/progressBarStyleLarge"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"/>
+
+                <TextView
+                        android:id="@+id/center_id_weather_waiting_tips"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/center_id_weather_waiting"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/center_weather_waiting_tips_size"/>
+
+                <ImageView
+                        android:id="@+id/center_id_weather_icon"
+                        android:layout_width="@dimen/center_weather_icon_width_height"
+                        android:layout_height="@dimen/center_weather_icon_width_height"
+                        android:padding="@dimen/center_weather_icon_padding"
+                        android:layout_marginTop="@dimen/center_weather_icon_margin_top"/>
+
+                <TextView
+                        android:id="@+id/center_id_weather_city"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/center_city_height"
+                        android:layout_toRightOf="@+id/center_id_weather_icon"
+                        android:singleLine="true"
+                        android:gravity="center"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/center_city_text_size"/>
+
+                <TextView
+                        android:id="@+id/center_id_weather_info"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/center_weather_info_height"
+                        android:layout_below="@+id/center_id_weather_city"
+                        android:singleLine="true"
+                        android:gravity="center"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/center_weather_info_size"/>
+
+                <TextView
+                        android:id="@+id/center_id_weather_others1"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/center_weather_info_height"
+                        android:layout_below="@+id/center_id_weather_info"
+                        android:gravity="center"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/center_weather_others_size"/>
+                <TextView
+                        android:id="@+id/center_id_weather_others2"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/center_weather_info_height"
+                        android:layout_below="@+id/center_id_weather_others1"
+                        android:gravity="center"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/center_weather_others_size"/>
+            </RelativeLayout>
+        </LinearLayout>
+
+        <com.netxeon.lignthome.CustomizedView
+                android:id="@+id/center_id_memory"
+                android:layout_width="@dimen/center_common_width"
+                android:layout_height="@dimen/center_common_height"
+                android:layout_below="@id/center_id_date_time_weather_container"
+                android:layout_marginBottom="@dimen/center_icon_edge_margin"
+                android:layout_marginLeft="@dimen/center_icon_edge_margin"
+                android:layout_marginTop="@dimen/center_icon_margin"
+                android:background="@drawable/hot_icon_bg"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center"
+                android:padding="@dimen/center_date_time_padding">
+        </com.netxeon.lignthome.CustomizedView>
+
+        <com.netxeon.lignthome.CustomizedView
+                android:id="@+id/center_id_apps"
+                android:layout_width="@dimen/center_common_width"
+                android:layout_height="@dimen/center_common_height"
+                android:layout_below="@id/center_id_date_time_weather_container"
+                android:layout_marginBottom="@dimen/center_icon_margin"
+                android:layout_marginLeft="@dimen/center_icon_margin"
+                android:layout_marginTop="@dimen/center_icon_margin"
+                android:layout_toRightOf="@id/center_id_memory"
+                android:background="@drawable/hot_icon_bg"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center"
+                android:onClick="onIconClick">
+
+            <ImageView
+                    android:layout_width="@dimen/center_common_width"
+                    android:layout_height="@dimen/center_common_height"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/icon_apps"/>
+        </com.netxeon.lignthome.CustomizedView>
+
+        <com.netxeon.lignthome.CustomizedView
+                android:id="@+id/center_id_xbmc"
+                android:layout_width="230dp"
+                android:layout_height="@dimen/center_common_height"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="@dimen/center_icon_margin"
+                android:layout_marginTop="@dimen/center_icon_margin"
+                android:layout_marginRight="@dimen/center_icon_margin"
+                android:layout_toRightOf="@id/center_id_date_time_weather_container"
+                android:nextFocusRight="@id/center_id_browser"
+                android:background="@drawable/hot_icon_bg"
+                android:clickable="true"
+                android:focusable="true"
+                android:onClick="onIconClick"
+                android:scaleType="fitXY"
+                android:tag="@string/package_xbmc">
+
+            <ImageView
+                    android:layout_width="@dimen/center_common_long_width"
+                    android:layout_height="@dimen/center_common_height"
+                    android:src="@drawable/icon_xbmc"/>
+        </com.netxeon.lignthome.CustomizedView>
+
+        <com.netxeon.lignthome.CustomizedView
+                android:id="@+id/center_id_browser"
+                android:layout_width="230dp"
+                android:layout_height="@dimen/center_common_temp_height"
+                android:layout_below="@id/center_id_xbmc"
+                android:layout_marginLeft="@dimen/center_icon_margin"
+                android:layout_marginTop="@dimen/center_icon_margin"
+                android:layout_toRightOf="@id/center_id_date_time_weather_container"
+                android:nextFocusRight="@id/center_id_memory"
+                android:background="@drawable/hot_icon_bg"
+                android:clickable="true"
+                android:focusable="true"
+                android:onClick="onIconClick"
+                android:scaleType="fitXY"
+                android:gravity="center"
+                android:tag="@string/package_browser">
+
+            <ImageView
+                    android:layout_width="@dimen/center_common_width"
+                    android:layout_height="@dimen/center_common_temp_height"
+                    android:src="@drawable/icon_browser"/>
+        </com.netxeon.lignthome.CustomizedView>
+
+        <com.netxeon.lignthome.CustomizedView
+                android:id="@+id/center_id_market"
+                android:layout_width="230dp"
+                android:layout_height="@dimen/center_common_temp_height"
+                android:layout_below="@id/center_id_setting"
+                android:layout_marginLeft="@dimen/center_icon_margin"
+                android:layout_toRightOf="@id/center_id_apps"
+                android:background="@drawable/hot_icon_bg"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center"
+                android:onClick="onIconClick"
+                android:scaleType="fitXY"
+                android:tag="@string/package_market">
+
+            <ImageView
+                    android:layout_width="@dimen/center_common_width"
+                    android:layout_height="@dimen/center_common_temp_height"
+                    android:src="@drawable/icon_shop"/>
+        </com.netxeon.lignthome.CustomizedView>
+
+        <com.netxeon.lignthome.CustomizedView
+                android:id="@+id/center_id_file"
+                android:layout_width="230dp"
+                android:layout_height="@dimen/center_common_height"
+                android:layout_below="@id/center_id_browser"
+                android:layout_marginBottom="@dimen/center_icon_edge_margin"
+                android:layout_marginLeft="@dimen/center_icon_margin"
+                android:layout_marginTop="@dimen/center_icon_margin"
+                android:layout_toRightOf="@id/center_id_apps"
+                android:background="@drawable/hot_icon_bg"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center"
+                android:onClick="onIconClick"
+                android:scaleType="fitXY"
+                android:tag="@string/package_file_rockchip">
+
+            <ImageView
+                    android:layout_width="@dimen/center_common_width"
+                    android:layout_height="@dimen/center_common_height"
+                    android:src="@drawable/icon_file"/>
+        </com.netxeon.lignthome.CustomizedView>
+
+        <com.netxeon.lignthome.CustomizedView
+                android:id="@+id/center_id_setting"
+                android:layout_width="230dp"
+                android:layout_height="@dimen/center_common_height"
+                android:layout_below="@id/center_id_file"
+                android:layout_marginBottom="@dimen/center_icon_edge_margin"
+                android:layout_marginLeft="@dimen/center_icon_margin"
+                android:layout_toRightOf="@id/center_id_apps"
+                android:background="@drawable/hot_icon_bg"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center"
+                android:onClick="onIconClick"
+                android:scaleType="fitXY"
+                android:tag="@string/package_setting">
+
+            <ImageView
+                    android:layout_width="@dimen/center_common_width"
+                    android:layout_height="@dimen/center_common_height"
+                    android:src="@drawable/icon_setting"/>
+        </com.netxeon.lignthome.CustomizedView>
+
+        <RelativeLayout
+                android:layout_width="370dp"
+                android:layout_height="545dp"
+                android:layout_alignLeft="@+id/center_id_memory"
+                android:layout_below="@id/center_id_memory"
+                android:background="@drawable/time_date_bg">
+
+            <TextView
+                    android:id="@+id/center_id_favorates_tips"
+                    android:layout_width="@dimen/center_favorate_tips_width"
+                    android:layout_height="@dimen/center_favorate_tips_height"
+                    android:layout_marginLeft="@dimen/center_icon_margin"
+                    android:layout_marginTop="@dimen/center_icon_margin"
+                    android:drawableLeft="@drawable/favorate"
+                    android:gravity="center"
+                    android:text="@string/favorite_tips"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/center_favorates_tips_font_size"/>
+
+            <com.netxeon.lignthome.CustomizedGridView
+                    android:id="@+id/center_id_favorates_container"
+                    android:layout_width="@dimen/center_favorate_container_width"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@id/center_id_favorates_tips"
+                    android:layout_marginLeft="@dimen/center_icon_edge_margin"
+                    android:layout_marginRight="@dimen/center_icon_edge_margin"
+                    android:layout_marginTop="@dimen/center_icon_margin"
+                    android:columnWidth="@dimen/center_grid_item_width"
+                    android:focusable="true"
+                    android:gravity="center"
+                    android:horizontalSpacing="10dp"
+                    android:listSelector="@drawable/shortcut_bg"
+                    android:numColumns="auto_fit"
+                    android:padding="3dp"
+                    android:stretchMode="columnWidth"
+                    android:verticalSpacing="@dimen/center_favorite_grid_item_vertical_space"/>
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+            android:layout_width="@dimen/center_common_width"
+            android:layout_height="@dimen/center_common_height"
+            android:layout_marginLeft="@dimen/center_icon_edge_margin"
+            android:layout_marginTop="@dimen/center_memory_container_margin_top">
+
+        <TextView
+                android:id="@+id/center_id_memory_used"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:textColor="@color/white"
+                android:textSize="@dimen/center_memory_used_text_size"/>
+
+        <ImageView
+                android:id="@+id/center_id_memory_circle"
+                android:layout_width="@dimen/center_memory_circle_width_height"
+                android:layout_height="@dimen/center_memory_circle_width_height"
+                android:layout_centerInParent="true"
+                android:src="@drawable/memory_circle_image"/>
+    </RelativeLayout>
+
+</RelativeLayout>

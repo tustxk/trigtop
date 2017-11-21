@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="invalid_system">invalid system!!!</string>
+    <string name="app_name">LightHome</string>
+    <string name="home_logo">light  Sample comfortable</string>
+    <string name="favorite_tips">My Favorite</string>
+    <string name="category_games_tips">Games</string>
+    <string name="category_medias_tips">Videos</string>
+    <string name="category_home_tips">Home</string>
+	<string name="str_text">20/30</string>
+    
+    <string name="weather_edit_city">Locating by network....  \n or you can click here to edit your location \n (make sure your network is available)</string>
+    <string name="weather_edit_city_error">Can not find the city, please try again!</string>
+    <string name="weather_edit_city_dialog_tips">Input your city name</string>
+    <string name="weather_edit_city_dialog_ok">OK</string>
+    <string name="weather_edit_city_dialog_not_empty">Make sure your input is correct!</string>
+    <string name="sync_date">Synchronizing date </string>
+    <string name="clear_memory_done">All Apps have been killed and memory is clear!</string>
+    
+    <string name="load_apps">Loading applications</string>
+    <string name="long_click_dialog_title">Please choice !</string>
+    <string name="background_choice">Please select a picture as the background !</string>
+    
+    <!-- do not translate the next block -->
+    <string name="package_search">com.google.android.googlequicksearchbox</string>
+    <string name="package_xbmc">org.xbmc.xbmc</string>
+    <string name="package_kodi">com.example.hdmirxdemo</string>
+    <string name="package_player">com.meson.videoplayer</string>
+    <string name="package_market">com.android.vending</string>
+    <string name="package_browser">com.android.chrome</string>
+    <string name="package_file_rockchip">com.android.rockchip</string>
+    <string name="package_file_realtek">com.fb.FileBrower</string>
+    <string name="package_file_amlogic">com.droidlogic.FileBrower</string>
+    <string name="package_file_aw">com.softwinner.TvdFileManager</string>
+    <string name="package_gallery">com.android.gallery3d</string>
+    <string name="package_setting">com.android.settings</string>
+   
+    <string name="package_eshare">com.ecloud.eshare.server</string>
+    <string name="package_flix">com.gpit.android.video.player.omp</string>
+    <!-- 猎豹 <string name="package_clean">com.cmcm.cleanmaster.tv</string>-->
+ 	<!-- <string name="package_clean">com.xiaobaifile.clean</string> -->
+
+	 <string name="poweroff">Shutdown</string>
+     <string name="sleep">Sleep</string>
+     <string name="Delay">Reboot</string>
+</resources>

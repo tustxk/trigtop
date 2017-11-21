@@ -1,0 +1,21 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/apps_id_root">
+	<GridView
+        android:id="@+id/all_apps_gridview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+		android:padding="@dimen/apps_grid_padding"
+    	android:background="@drawable/time_date_bg"
+        android:columnWidth="@dimen/apps_grid_item_width"
+        android:gravity="center"
+        android:horizontalSpacing="10dp"
+        android:numColumns="auto_fit"
+        android:listSelector="@drawable/shortcut_bg"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="@dimen/all_apps_grid_item_vertical_space" />
+   
+
+</RelativeLayout>

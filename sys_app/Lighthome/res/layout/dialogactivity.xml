@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res/com.netxeon.lignthome"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+     android:orientation="horizontal"
+     android:gravity="center_vertical|center_horizontal"
+     android:background="#D2000000" 
+     >
+
+    <RelativeLayout
+        android:id="@+id/line1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:addStatesFromChildren="true"
+        android:layout_marginRight="100dp"
+        android:paddingTop="15dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:orientation="vertical" >
+
+        <com.example.testroundprogressbar.RoundProgressBar
+            android:id="@+id/roundProgressBar1"
+            android:layout_width="180dp"
+            android:layout_height="180dp"
+            android:focusable="false"
+            app:roundColor="@color/dimgray" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/line2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+       android:addStatesFromChildren="true"
+           android:paddingTop="15dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:orientation="vertical" >
+
+        <com.example.testroundprogressbar.RoundProgressBar
+            android:id="@+id/roundProgressBar2"
+            android:layout_width="180dp"
+            android:layout_height="180dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:focusable="false"
+            app:roundColor="@color/dimgray" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/line3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+         android:paddingTop="15dp"
+        android:addStatesFromChildren="true"
+        android:clickable="true"
+        android:focusable="true"
+        android:orientation="vertical" >
+        
+        <com.example.testroundprogressbar.RoundProgressBar
+            android:id="@+id/roundProgressBar3"
+            android:layout_width="180dp"
+            android:layout_height="180dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+             android:layout_marginLeft="100dp"
+            android:focusable="false"
+            app:roundColor="@color/dimgray" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="-6dp"
+            android:visibility="gone"
+            android:src="@drawable/jiantou" />
+
+    </RelativeLayout>
+
+</LinearLayout>
