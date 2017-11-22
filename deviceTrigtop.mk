@@ -9,5 +9,6 @@ PRODUCT_PACKAGES += FileBrowser
 PRODUCT_PACKAGES += ProductTest
 PRODUCT_PACKAGES += HDMIRxDemo
 
+PRODUCT_PROPERTY_OVERRIDES += persist.wifi.mac.address=02:00:00:00:00:00
 #'Auto OSD language' default false
 PRODUCT_PROPERTY_OVERRIDES += persist.rtk.cec.setlanguage=false
