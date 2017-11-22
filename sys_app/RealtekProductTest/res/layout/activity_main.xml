@@ -1,0 +1,507 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="horizontal" >
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="540dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:background ="@drawable/border_shadow"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="25dp">
+
+        <TextView
+            android:text="@string/external_storage_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textStyle="bold"
+            android:textSize="32sp"
+            android:layout_marginLeft="10dp" 
+            android:id="@+id/external_storage_title" />
+
+        <View 
+            android:layout_width="500dp" 
+            android:layout_height="1dp" 
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp" 
+            android:background="#FF909090"/> 
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp" 
+            android:orientation="horizontal">
+
+            <TextView
+                    android:text="@string/usb1_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:id="@+id/usb1_title" />
+
+            <TextView
+                    android:text="@string/usb1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="20sp"
+                    android:textColor="#0000FF"
+                    android:id="@+id/usb1" />        
+        </LinearLayout>  
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:orientation="horizontal">
+
+            <TextView
+                    android:text="@string/usb2_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:id="@+id/usb2_title" />
+
+            <TextView
+                    android:text="@string/usb2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="20sp"
+                    android:textColor="#0000FF"
+                    android:id="@+id/usb2" />        
+        </LinearLayout>  
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:orientation="horizontal">
+
+            <TextView
+                    android:text="@string/usb3_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:id="@+id/usb3_title" />
+
+            <TextView
+                    android:text="@string/usb3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="20sp"
+                    android:textColor="#0000FF"
+                    android:id="@+id/usb3" />        
+        </LinearLayout>  
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:orientation="horizontal">
+
+            <TextView
+                    android:text="@string/sdcard_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:id="@+id/sdcard_title" />
+
+            <TextView
+                    android:text="@string/sdcard"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="20sp"
+                    android:textColor="#0000FF"
+                    android:id="@+id/sdcard" />        
+        </LinearLayout>  
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:orientation="horizontal">
+
+            <TextView
+                    android:text="@string/sata1_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:id="@+id/sata1_title" />
+
+            <TextView
+                    android:text="@string/sata1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="20sp"
+                    android:textColor="#0000FF"
+                    android:id="@+id/sata1" />        
+        </LinearLayout>  
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:orientation="horizontal">
+
+            <TextView
+                    android:text="@string/sata2_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:id="@+id/sata2_title" />
+
+            <TextView
+                    android:text="@string/sata2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="20sp"
+                    android:textColor="#0000FF"
+                    android:id="@+id/sata2" />        
+        </LinearLayout>  
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="10dp" 
+            android:orientation="horizontal">
+
+            <TextView
+                    android:text="@string/bt_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="32sp"
+                    android:textStyle="bold"
+                    android:id="@+id/bt_title" />
+
+            <TextView
+                    android:text="@string/bt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="32sp"
+                    android:textColor="#0000FF"
+                    android:id="@+id/bt" />        
+        </LinearLayout>  
+
+        <TextView
+            android:text="@string/network"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:textStyle="bold"
+            android:textSize="32sp"
+            android:layout_marginLeft="10dp" 
+            android:id="@+id/network" />
+
+        <View 
+            android:layout_width="500dp" 
+            android:layout_height="1dp" 
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp" 
+            android:background="#FF909090"/>
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:orientation="horizontal">     
+
+            <TextView
+                android:text="@string/ethernet_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:textStyle="bold"
+                android:textSize="32sp"
+                android:id="@+id/ethernet_title" />
+
+            <TextView
+                android:text="@string/ethernet_hint"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:textSize="32sp"
+                android:layout_marginLeft="10dp" 
+                android:textColor="#FF0000"
+                android:id="@+id/ethernet_hint" />    
+        </LinearLayout>     
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:orientation="horizontal">
+
+            <TextView
+                    android:text="@string/ethernet_ip_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:id="@+id/ethernet_ip_title" />
+
+            <TextView
+                    android:text="@string/ethernet_ip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="20sp"
+                    android:textColor="#0000FF"
+                    android:id="@+id/ethernet_ip" />        
+        </LinearLayout>  
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:orientation="horizontal">
+
+            <TextView
+                    android:text="@string/ethernet_mac_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:id="@+id/ethernet_mac_title" />
+
+            <TextView
+                    android:text="@string/ethernet_mac"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="20sp"
+                    android:textColor="#0000FF"
+                    android:id="@+id/ethernet_mac" />        
+        </LinearLayout>  
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+            <TextView
+                android:text="@string/wifi_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textSize="32sp"
+                android:id="@+id/wifi_title" />
+
+            <TextView
+                android:text="@string/wifi_hint"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="32sp"
+                android:layout_marginLeft="10dp" 
+                android:textColor="#FF0000"
+                android:id="@+id/wifi_hint" />
+        </LinearLayout>
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:orientation="horizontal">
+
+            <TextView
+                    android:text="@string/wifi_ip_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:id="@+id/wifi_ip_title" />
+
+            <TextView
+                    android:text="@string/wifi_ip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="20sp"
+                    android:textColor="#0000FF"
+                    android:id="@+id/wifi_ip" />        
+        </LinearLayout>      
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:orientation="horizontal">
+
+            <TextView
+                    android:text="@string/wifi_mac_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:id="@+id/wifi_mac_title" />
+
+            <TextView
+                    android:text="@string/wifi_mac"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="20sp"
+                    android:textColor="#0000FF"
+                    android:id="@+id/wifi_mac" />        
+        </LinearLayout>  
+
+        <TextView
+            android:text="@string/complete_hint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:textSize="32sp"
+            android:textColor="#00FF00"
+            android:layout_marginLeft="40dp" 
+            android:id="@+id/complete_hint" />
+
+    </LinearLayout>    
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="660dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:background ="@drawable/border_shadow"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginLeft="10dp">
+        <TextView
+            android:text="@string/sysinfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textStyle="bold"
+            android:textSize="32sp"
+            android:layout_marginLeft="10dp" 
+            android:id="@+id/sysinfo" />
+
+        <View 
+            android:layout_width="600dp" 
+            android:layout_height="1dp" 
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp" 
+            android:background="#FF909090"/> 
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp" 
+            android:orientation="horizontal">
+
+            <TextView
+                    android:text="@string/ddr_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:id="@+id/ddr_title" />
+
+            <TextView
+                    android:text="@string/ddr"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="20sp"
+                    android:textColor="#0000FF"
+                    android:id="@+id/ddr" />        
+        </LinearLayout>  
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp" 
+            android:orientation="horizontal">
+
+            <TextView
+                    android:text="@string/flash_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:id="@+id/falsh_title" />
+
+            <TextView
+                    android:text="@string/flash"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="20sp"
+                    android:textColor="#0000FF"
+                    android:id="@+id/flash" />        
+        </LinearLayout>  
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp" 
+            android:orientation="horizontal">
+
+            <TextView
+                    android:text="@string/version_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:id="@+id/version_title" />
+
+            <TextView
+                    android:text="@string/version"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="20sp"
+                    android:textColor="#0000FF"
+                    android:id="@+id/version" />        
+        </LinearLayout>  
+
+        <LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginBottom="5dp"
+                    android:background ="@drawable/border_shadow">
+                    <TextView
+                        android:text="@string/play_hint"
+                        android:layout_width="match_parent"  
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="3dp"
+                        android:textSize="24sp"
+                        android:textColor="#00FF00"
+                        android:id="@+id/play_hint" />  
+                    <SurfaceView
+                        android:id="@+id/tx_preview"
+                        android:layout_width="match_parent"
+                        android:layout_height="300dp"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginBottom="7dp"
+                        android:layout_marginLeft="7dp"
+                        android:layout_marginRight="7dp"
+                        />
+                    <TextView
+                        android:text="@string/not_play"
+                        android:layout_width="match_parent"  
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="3dp"
+                        android:layout_marginBottom="7dp"
+                        android:textSize="20sp"
+                        android:textColor="#0000FF"
+                        android:id="@+id/play_state" />      
+        </LinearLayout>     
+
+    </LinearLayout>    
+</LinearLayout>
