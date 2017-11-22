@@ -8,3 +8,6 @@ PRODUCT_PACKAGES += wizardv10-20170208
 PRODUCT_PACKAGES += FileBrowser
 PRODUCT_PACKAGES += ProductTest
 PRODUCT_PACKAGES += HDMIRxDemo
+
+#'Auto OSD language' default false
+PRODUCT_PROPERTY_OVERRIDES += persist.rtk.cec.setlanguage=false
